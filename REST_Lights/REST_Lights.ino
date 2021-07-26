@@ -2,8 +2,13 @@
 #include <WiFiClient.h>
 #include <Adafruit_NeoPixel.h>
 
-const char* ssid = "SSID";      //CHANGE ME
-const char* pass = "PASSWORD";  //CHANGE ME
+const char* ssid = "SSID";            //CHANGE ME
+const char* pass = "PASSWORD";        //CHANGE ME
+
+int SerialCommunicationSpeed = 9600;  //CHANGE ME (IF NEEDED)
+
+#define LEDPIN 2                      //CHANGE ME (IF NEEDED)
+#define NUMPIXELS 25                  //CHANGE ME
 
 String rs = "r";
 String gs = "g";
@@ -11,9 +16,6 @@ String bs = "b";
 
 #define HTTP_REST_PORT 8080
 ESP8266WebServer httpRestServer(HTTP_REST_PORT);
-
-#define LEDPIN 2                //CONFIRM I AM CORRECT, CHANGE IF REQUIRED
-#define NUMPIXELS 25
 
 Adafruit_NeoPixel pixels (NUMPIXELS, LEDPIN, NEO_GRB + NEO_KHZ800);
 
@@ -49,7 +51,7 @@ void restServerRouting()
  
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(SerialCommunicationSpeed);
 
   pixels.begin();
   pixels.fill(pixels.Color(0, 0, 0), 0, NUMPIXELS - 1);
