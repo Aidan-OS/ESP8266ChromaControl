@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChromaBroadcastSDK.NET</name>
+    </assembly>
+    <members>
+        <member name="T:ChromaBroadcast.RzChromaBroadcastAPI">
+            <summary>
+            The Razer Chroma Broadcast SDK
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastAPI.Is32Bit">
+            <summary>
+            If the architecture of the current process is 32 bit
+            </summary>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.Init32(System.Guid@)">
+            <summary>
+            Initialize Chroma Broadcast API (32 bit)
+            </summary>
+            <param name="appId">Application Id for authentication</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.Init64(System.Guid@)">
+            <summary>
+            Initialize Chroma Broadcast API (64 bit)
+            </summary>
+            <param name="appId">Application Id for authentication</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnInit32">
+            <summary>
+            UnInitialize Chroma Broadcast API (32 bit)
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnInit64">
+            <summary>
+            UnInitialize Chroma Broadcast API (64 bit)
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="T:ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotificationCallback">
+            <summary>
+            Chroma Broadcast Callback function
+            </summary>
+            <param name="type">The callback function's type</param>
+            <param name="pData">the callback function's data</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotificationCallbackState">
+            <summary>
+            Chroma Broadcast Callback function
+            </summary>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotification32(ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotificationCallback)">
+            <summary>
+            Register Chroma Broadcast API event notification (32 bit)
+            </summary>
+            <param name="lpFunc">Callback function</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotification64(ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotificationCallback)">
+            <summary>
+            Register Chroma Broadcast API event notification (64 bit)
+            </summary>
+            <param name="lpFunc">Callback function</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnRegisterEventNotificationNative32">
+            <summary>
+            UnRegister Chroma Broadcast API event notification (32 bit)
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnRegisterEventNotificationNative64">
+            <summary>
+            UnRegister Chroma Broadcast API event notification (64 bit)
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.Init(System.Guid)">
+            <summary>
+            Initialize Chroma Broadcast API
+            </summary>
+            <param name="appId">Application Id for authentication</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnInit">
+            <summary>
+            UnInitialize Chroma Broadcast API
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.RegisterEventNotification(System.Func{ChromaBroadcast.RzChromaBroadcastType,System.Nullable{ChromaBroadcast.RzChromaBroadcastStatus},System.Nullable{ChromaBroadcast.RzChromaBroadcastEffect},ChromaBroadcast.RzResult})">
+            <summary>
+            Register Chroma Broadcast API event notification
+            </summary>
+            <param name="lpFunc">Callback function</param>
+            <returns>Razer result</returns>
+        </member>
+        <member name="M:ChromaBroadcast.RzChromaBroadcastAPI.UnRegisterEventNotification">
+            <summary>
+            UnRegister Chroma Broadcast API event notification
+            </summary>
+            <returns>Razer result</returns>
+        </member>
+        <member name="T:ChromaBroadcast.RzChromaBroadcastEffect">
+            <summary>
+            Chroma Broadcast effect structure contains five(5) broadcasted RGB color value from ChromaSDK / Synapse
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.ChromaLink1">
+            <summary>
+            ChromaLink 1
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.ChromaLink2">
+            <summary>
+            ChromaLink 2
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.ChromaLink3">
+            <summary>
+            ChromaLink 3
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.ChromaLink4">
+            <summary>
+            ChromaLink 4
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.ChromaLink5">
+            <summary>
+            ChromaLink 5
+            </summary>
+        </member>
+        <member name="P:ChromaBroadcast.RzChromaBroadcastEffect.Reserved">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="T:ChromaBroadcast.RzChromaBroadcastStatus">
+            <summary>
+            Chroma Broadcast Status is triggered when there is a change of Broadcast state
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzChromaBroadcastStatus.Live">
+            <summary>
+            Live occurs when all expected conditions are met
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzChromaBroadcastStatus.NotLive">
+            <summary>
+            NotLive occurs when one of the expected conditions is not fulfilled
+            </summary>
+        </member>
+        <member name="T:ChromaBroadcast.RzChromaBroadcastType">
+            <summary>
+            Chroma Broadcast Type indicates the callback function's type
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzChromaBroadcastType.BroadcastEffect">
+            <summary>
+            Broadcast Effect
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzChromaBroadcastType.BroadcastStatus">
+            <summary>
+            Broadcast Status
+            </summary>
+        </member>
+        <member name="T:ChromaBroadcast.RzResult">
+            <summary>
+            Return result
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.Invalid">
+            <summary>
+            Invalid
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.AccessDenied">
+            <summary>
+            Access denied
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.InvalidHandle">
+            <summary>
+            Invalid handle
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.InvalidAccess">
+            <summary>
+            Invalid access
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.NotSupported">
+            <summary>
+            Not supported
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.InvalidParameter">
+            <summary>
+            Invalid parameter
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.ServiceNotExist">
+            <summary>
+            The service does not exist
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.ServiceNotActive">
+            <summary>
+            The service has not been started
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.SingleInstanceApp">
+            <summary>
+            Cannot start more than one instance of the specified program
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.DeviceNotConnected">
+            <summary>
+            Device not connected
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.NotFound">
+            <summary>
+            Element not found
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.RequestAborted">
+            <summary>
+            Request aborted
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.NotAuthenticated">
+            <summary>
+            Requested operation is not perfromed because the user has not been authenticated
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.AlreadyInitialized">
+            <summary>
+            An attempt was made to perform an initialization operation when initialization has already been completed
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.ResourceDisabled">
+            <summary>
+            Resource not available or disabled
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.DeviceNotAvailable">
+            <summary>
+            Device not available or supported
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.NotValidState">
+            <summary>
+            The group or resource is not in the correct state to perform the requested operation
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.InsufficientAccessRights">
+            <summary>
+            Insufficient access rights, administrator privilege required
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.NoMoreItems">
+            <summary>
+            No more items
+            </summary>
+        </member>
+        <member name="F:ChromaBroadcast.RzResult.Failed">
+            <summary>
+            General failure
+            </summary>
+        </member>
+    </members>
+</doc>
