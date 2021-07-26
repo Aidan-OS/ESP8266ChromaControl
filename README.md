@@ -80,3 +80,13 @@ Once the upload has finished, the program should begin to run on the board. To s
 Congratulations! You have now properly prepared your ESP8266!
 
 ## Installing the ESP8266 Chroma Control
+
+First, download the latest release from the Releases page on GitHub, or ![Here](https://github.com/Aidan-OS/ESP8266ChromaControl/releases).
+
+After you have downloaded the installer, run it and navigate through as you please until you reach this page
+
+![ReadMe16](ReadMe_images/16.png)
+
+Here you will want to enter in the IP address for each of your ESP8266s in this format: `http://xxx.xxx.x.xxx`. Separate different addresses with commas, and then press continue.
+
+Once the program has installed, Razer should recognize your lights and turn them on!
