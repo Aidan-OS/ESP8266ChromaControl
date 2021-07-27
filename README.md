@@ -45,7 +45,7 @@ In the new window, search for `Adafruit NeoPixel` and install the one shown in t
 
 You are now almost ready to start modifying the code!
 
-###Customizing and Uploading Arduino Code
+### Customizing and Uploading Arduino Code
 
 There are only 5 possible modifications required in order to make this code function on your ESP8266 board. First you must change the `ssid` and `pass` fields to your local wireless network's name and password. Next you may need to change the `SerialCommunicationSpeed` to the speed that is specified for your board. After that you will need to set which data pin you wish to connect the LED strip to. Finally, set the number of LEDs in your strip.
 
@@ -77,7 +77,7 @@ Once the upload has finished, the program should begin to run on the board. To s
 
 ![ReadMe15](ReadMe_images/15.png)
 
-Congratulations! You have now properly prepared your ESP8266!
+Congratulations! You have now properly prepared your ESP8266! You may now fully close the Arduino IDE.
 
 ## Installing the ESP8266 Chroma Control
 
@@ -87,6 +87,6 @@ After you have downloaded the installer, run it and navigate through as you plea
 
 ![ReadMe16](ReadMe_images/16.png)
 
-Here you will want to enter in the IP address for each of your ESP8266s in this format: `http://xxx.xxx.x.xxx`. Separate different addresses with commas, and then press continue.
+Here you will want to enter in the IP address for each of your ESP8266s in this format: `http://xxx.xxx.x.xxx:8080`. Separate different addresses with commas, and then press next to continue with the install.
 
 Once the program has installed, Razer should recognize your lights and turn them on!

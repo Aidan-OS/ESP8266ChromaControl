@@ -60,10 +60,17 @@ void setup()
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, pass);
 
+  int count = 0;
   while(WiFi.status() != WL_CONNECTED)
   {
     delay(500);
     Serial.print(".");
+    if(count > 10)
+    {
+      Serial.println("\nFailed to Connect");
+      return;
+    }
+    count++;
   }
   Serial.println("");
   Serial.print("Connected to ");
