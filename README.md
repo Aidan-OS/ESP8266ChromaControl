@@ -81,7 +81,7 @@ Congratulations! You have now properly prepared your ESP8266! You may now fully 
 
 ## Installing the ESP8266 Chroma Control
 
-First, download the latest release from the Releases page on GitHub, or ![Here](https://github.com/Aidan-OS/ESP8266ChromaControl/releases).
+First, download the latest release from the Releases page on GitHub, or [Here](https://github.com/Aidan-OS/ESP8266ChromaControl/releases).
 
 After you have downloaded the installer, run it and navigate through as you please until you reach this page
 
