@@ -8,7 +8,7 @@ This tutorial assumes that you have the Arduino IDE installed. Installation inst
 In order to load the program onto the Arduino, you are going to need a couple of libraries, [ESP8266/Arduino](https://github.com/esp8266/Arduino) and [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel). The Adafruit_NeoPixel library will control WS2812 LED strips, which is the easiest LED strip to obtain currently.
 
 #### Preparing the ESP8266 Board Library
-In the Arduino IDE, select "File>Preferences" as shown below:
+Using the Aruduino IDE, open the file [REST_Lights/REST_Lights.ino](REST_Lights/REST_Lights.ino). Then, select "File>Preferences" as shown below:
 
 ![ReadMe1](ReadMe_images/1.png)
 
