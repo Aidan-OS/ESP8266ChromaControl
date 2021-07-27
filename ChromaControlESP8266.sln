@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaControlESP8266", "Chr
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ChromaControlESP8266 Setup", "ChromaControlESP8266 Setup\ChromaControlESP8266 Setup.vdproj", "{CB7CBCA8-12BF-4165-A42F-BA52D63BC038}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaControlESP8266WorkerService", "ChromaControlESP8266WorkerService\ChromaControlESP8266WorkerService.csproj", "{6EBDEF5B-B309-4C14-8328-F6B8776C6C47}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ChromaControlESP8266WorkerServiceSetup", "ChromaControlESP8266WorkerServiceSetup\ChromaControlESP8266WorkerServiceSetup.vdproj", "{ADD02DC1-E092-44F1-BD25-36BE77743485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,12 @@ Global
 		{E0AA648F-692C-4321-A997-80E9EA3557CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB7CBCA8-12BF-4165-A42F-BA52D63BC038}.Debug|Any CPU.ActiveCfg = Debug
 		{CB7CBCA8-12BF-4165-A42F-BA52D63BC038}.Release|Any CPU.ActiveCfg = Release
+		{6EBDEF5B-B309-4C14-8328-F6B8776C6C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBDEF5B-B309-4C14-8328-F6B8776C6C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBDEF5B-B309-4C14-8328-F6B8776C6C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBDEF5B-B309-4C14-8328-F6B8776C6C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD02DC1-E092-44F1-BD25-36BE77743485}.Debug|Any CPU.ActiveCfg = Debug
+		{ADD02DC1-E092-44F1-BD25-36BE77743485}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
