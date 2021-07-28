@@ -1,19 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>dotnet-ChromaControlESP8266WorkerService-3B31FA3A-E3F8-4380-B9DA-6520BCA646D6</UserSecretsId>
-    <OutputType>exe</OutputType>
-    <PublishSingleFile>true</PublishSingleFile>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PlatformTarget>x64</PlatformTarget>
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>AidanVSSigningKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyName>Chroma Control ESP8266</AssemblyName>
+    <ApplicationIcon>ESP8266-logo.ico</ApplicationIcon>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ChromaControlESP8266WorkerService.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="ChromaBroadcastSDK.NET" Version="1.0.4" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
-    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+    <PackageReference Include="NReco.Logging.File" Version="1.1.2" />
   </ItemGroup>
 </Project>
